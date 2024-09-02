@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBurGer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/bangor.jpg" alt="Berger Hut Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to BarBurGer</h1>
+            <p>Experience the Taste of Perfection</p>
+            <!-- Tombol Explore Our Menu mengarah ke bagian dengan ID "menu" -->
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about dark-theme">
+        <div class="about-content">
+            <h2>About BarBurGer</h2>
+            <p>Barburger is all about the passion for burgers. The first open-kitchen-bar burger restaurant in Indonesia offers a varied selection of gourmet style burgers, halal hotdogs, fried chicken, fresh and hygienic food. Served in quick, warm and friendly service, the restaurant pampers fastfood lovers from sight down to the taste bud of delectable premium quality burgers, making truly burgerlovers stay young and pleasure forever.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+        <div class="about-image">
+            <img src="image/about-image.jpg" alt="About Image">
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="image/BaraGYU.jpg" alt="Burger 1">
+                <h3>BaraGYU Burger</h3>
+                <p>Gourmet burger dgn daging wagyu import Australia, daging cincang lada hitam, caramelized onion, Cheese Slice, BBQ Sauce, lettuce, kyuri, tomat dan saus burger spesial.</p>
+            </div>
+            <div class="menu-item">
+                <img src="image/BaraDUO.jpg" alt="Burger 2">
+                <h3>Best Seller</h3>
+                <p>BaraDUO Burger : Double cheese burger; 2 beef patty, 2 BBQ cheese slice, 2 cheese sauce, lettuce, kyuri, tomat dan saus burger spesial.</p>
+                <p>BaraMetal Burger : Triple cheese burger; 3 beef patty, 3 BBQ cheese slice, 3 cheese sauce, kyuri, tomat dan saus burger spesial.</p>
+            </div>
+            <div class="menu-item">
+                <img src="image/BaraBERE.jpg" alt="Burger 3">
+                <h3>BaraBERE Burger</h3>
+                <p>Gourmet burger dgn beef patty, daging cincang lada hitam, BBQ cheese slice, telur mata sapi, caramelized onion, beef bacon, lettuce, kyuri, tomat dan saus burger spesial.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <img src="image/customer1.jpg" alt="Customer 1">
+            <p>Kesini sekitar jam 7 malem yg ngelayanin kalo gasalah namanya mas ivan, attitude nya bagus banget dan ramah sama pelanggan, burger nya enak harga pas sama kantong mahasiswa, keep up the good work 👍
+            </p>
+            <h4>John Doe</h4>
+        </div>
+        <div class="testimonial">
+            <img src="image/customer2.jpg" alt="Customer 2">
+            <p>Nyobain disini karna bisa pake zomato gold dan rasanya enak walaupun harganya murah. Roti dan dagingnya super empukk
+            </p>
+            <h4>Jane Smith</h4>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="image/galeri1.jpg" alt="Image 1">
+            </div>
+            <div class="image-item">
+                <img src="image/galeri2.jpg" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="image/galeri3.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="image/galeri4.jpg" alt="Image 4">
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jl. Siaga Raya, Jakarta Selatan, Indonesia</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>0881012397591</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>infobarburger@gmail.com</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Tempat untuk menampilkan pesan setelah pengiriman -->
+            <div id="contactMessage" style="display: none; margin-top: 20px; padding: 15px; background-color: black; border-radius: 5px;">
+                Thank you for contacting us! We will get back to you shortly.
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+        </div>
+        <p class="footer-text">&copy; Copyright 2020 Rya & Rey</p>
+    </footer>   
+
+    <script>
+      // Menangani pengiriman formulir kontak
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+  
+          // Menampilkan pesan setelah pengiriman
+          document.getElementById('contactMessage').style.display = 'block';
+  
+          // Mengosongkan formulir setelah pengiriman
+          this.reset();
+      });
+
+    </script>
+</body>
+</html>
